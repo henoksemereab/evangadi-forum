@@ -1,0 +1,63 @@
+/* Basic styling for the header outer container */
+.header_outer_container {
+	border-bottom: 1px solid rgb(190, 188, 188);
+	position: sticky;
+	top: 0;
+	background-color: #fff;
+	width: 100%;
+	z-index: 1000;
+}
+
+/* Basic styling for the header container */
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px;
+	max-width: 85vw;
+	margin: auto;
+}
+
+/* Styling for the inner header container */
+.header_inside_container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 1rem; /* Added gap for better spacing */
+}
+
+/* Styling for individual items inside the header */
+.header_inside_container div {
+	cursor: pointer;
+}
+
+/* Styling for buttons inside the header */
+.header_inside_container button {
+	background-color: #516cf1;
+	border: none;
+	color: white;
+	padding: 10px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+/* Media query for screens with a maximum width of 670px */
+@media (max-width: 670px) {
+	.header {
+		flex-direction: column;
+		align-items: center;
+		padding: 10px 20px;
+	}
+
+	.header_inside_container {
+		width: 100%;
+		margin: 10px 0 0 0; /* Adjust margin for smaller screens */
+		flex-direction: column;
+		gap: 0.5rem; /* Reduce gap for smaller screens */
+		align-items: center;
+	}
+}
+
+.header_inside_container div:hover {
+    color: orange;
+}

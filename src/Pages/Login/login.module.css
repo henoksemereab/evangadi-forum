@@ -1,0 +1,126 @@
+button {
+    background-color: #fe8303;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 25px; /* Rounded corners */
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff9800; /* Brighter orange on hover */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Add shadow effect on hover */
+}
+input {
+    border: 1px solid #bbb8b8;
+    padding: 10px;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+    width: 90%;
+    margin-top: 10px;
+}
+input:focus {
+    border-color: #fe8303;
+}
+h2 {
+	color: #fe8303;
+}
+.container_content {
+	display: flex;
+	justify-content: space-around;
+	width: 85%;
+	margin: 0 auto;
+	margin-top: 20vh;
+	margin-bottom: 30vh;
+	height: 500px;
+	gap: 10%;
+}
+.second_box {
+	flex: 1;
+	border: none;
+}
+.second_box h1 {
+	color: gray;
+	font-size: 35px;
+}
+.second_box div {
+	margin-top: 20px;
+	width: 90%;
+}
+.first_box {
+	flex: 1;
+	border: none;
+	border-radius: 10px;
+	background-color: #fff;
+	text-align: center;
+	margin-top: 20px;
+	box-shadow: 10px 10px 5px 0px #f4f4f4;
+	box-sizing: border-box;
+	transition: opacity 0.5s ease-in-out;
+}
+.first_box div {
+	margin-top: 20px;
+}
+.first_box input {
+	width: 80%;
+	height: 6vh;
+	border-radius: 5px;
+	padding: 5px;
+	border-top: 1px solid rgb(187, 184, 184);
+	margin-top: 10px;
+}
+.first_box input:hover {
+	border-bottom:  solid orange;
+}
+
+.first_box button {
+	width: 80%;
+	padding: 15px;
+	background-color: #516cf0;
+	font-size: large;
+}
+
+.container {
+	height: 100%;
+	background-image: url(./images/background.svg);
+	background-size: 100%;
+	background-position: center;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	justify-content: space-between;
+}
+
+.register_link a {
+	color: #fe8303;
+	text-decoration: none;
+}
+.left_container {
+	text-align: end;
+	width: 95%;
+}
+.eye_input_container {
+	position: relative;
+	width: 100%;
+}
+
+.toggle_password {
+	position: absolute;
+	right: 60px;
+	top: 60%;
+	transform: translateY(-50%);
+	cursor: pointer;
+}
+
+@media screen and (max-width: 968px) {
+	.container_content {
+		flex-direction: column; /* Reverse order on small screens */
+	}
+	.second_box{
+		margin-bottom: 200px;
+	}
+}

@@ -1,0 +1,95 @@
+/* Basic styling for the footer */
+.footer {
+    background-color: #3b455a;
+    color: white;
+    padding: 2rem 0;
+}
+
+/* Container for the footer content */
+.footerContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem; /* Added padding to prevent content from touching the edges */
+}
+
+/* Styling for the logo */
+.logoContainer {
+    text-align: center;
+}
+
+.logo {
+    max-width: 150px;
+    margin-bottom: 1rem;
+}
+
+/* Social media section styling */
+.socialMedia {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.socialMedia a {
+    color: white;
+    font-size: 1.5rem;
+}
+
+/* Links and contact info styling */
+.links ul,
+.contactInfo ul {
+    list-style: none;
+    padding-left: 0;
+    text-align: left;
+}
+
+.links li,
+.contactInfo li {
+    margin-bottom: 1rem;
+}
+
+.links li a {
+    text-decoration: none;
+    color: #d5d5dd99;
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.links li a:hover {
+    color: orange; /* Change color to orange on hover */
+}
+
+.contactInfo li a {
+    color: #d5d5dd99;
+}
+
+/* Media queries for responsiveness */
+
+/* Medium screens (tablets) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .footerContainer {
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+/* Small screens (mobile devices) */
+@media (max-width: 767px) {
+    .footerContainer {
+        flex-direction: column;
+        text-align: center;
+        padding: 0 1rem;
+    }
+
+    .logo {
+        max-width: 100px;
+    }
+
+    .socialMedia {
+        justify-content: center;
+        gap: 0.5rem;
+    }
+}

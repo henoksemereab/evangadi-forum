@@ -1,0 +1,104 @@
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	color: orange;
+}
+
+.middle {
+	max-width: 60%;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 10vh;
+}
+
+.middle button {
+	text-align: end;
+	background-color: #516cf0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 15px 30px; /* Increase padding for larger button */
+	font-size: 16px; /* Increase font size */
+	border-radius: 5px;
+}
+
+.border_bottom h1 {
+	margin-top: 20px;
+	padding-bottom: 20px;
+}
+
+.border_bottom {
+	max-width: 60vw;
+	margin: 0 auto;
+}
+
+.answer_page {
+	margin-top: 6vh;
+	margin-bottom: 5vh;
+}
+
+.answer {
+	margin-top: 20px;
+	display: flex;
+	align-items: center;
+	gap: 4vw;
+}
+
+.middle small {
+	color: black;
+}
+
+.top_bottom {
+	border-bottom: 1px solid rgb(209, 206, 206);
+	border-top: 1px solid rgb(209, 206, 206);
+	padding: 15px;
+	margin: 0px;
+}
+
+.answers_list {
+	color: rgb(95, 92, 92);
+}
+
+textarea {
+	padding: 1vw;
+	width: 100%; /* Make textarea responsive */
+	resize: vertical; /* Allow vertical resizing */
+}
+
+form button {
+	background-color: #516cf0; /* Use the same color as .middle button for consistency */
+	padding: 15px 30px; /* Increase padding for larger button */
+	font-size: 16px; /* Increase font size */
+	border-radius: 5px;
+	cursor: pointer;
+	width: 30%; /* Make button responsive */
+	margin-top: 10px; /* Add margin to separate from textarea */
+}
+form button:hover{
+	color: white;
+	background-color: orange;
+}
+/* Media query for screens with a maximum width of 700px */
+@media (max-width: 700px) {
+	.border_bottom {
+		max-width: 90vw; /* Adjust width for smaller screens */
+	}
+
+	.middle {
+		max-width: 90%;
+		margin-top: 5vh; /* Adjust margin for smaller screens */
+	}
+
+	.answer {
+		flex-direction: column;
+		gap: 2vh; /* Adjust gap for smaller screens */
+	}
+
+	form button {
+		width: 100%; /* Ensure button takes full width on smaller screens */
+		padding: 12px 20px; /* Adjust padding for smaller screens */
+		font-size: 14px; /* Adjust font size for smaller screens */
+	}
+}
